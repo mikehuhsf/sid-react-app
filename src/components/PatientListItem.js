@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const PatientListItem = ({ patient }) => {
   const [doctorsList, setDoctorsList] = useState(null);
 
-  const GQL_API = `http://localhost:3030/`;
+  const GQL_API = `https://fast-thicket-68951.herokuapp.com/`;//`http://localhost:3030/`;
   const GQL_QUERY = `
     query($id: ID!){
       patient(id: $id){

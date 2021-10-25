@@ -5,7 +5,7 @@ const PatientsList = () => {
   const [patients, setPatients] = useState(null);
 
   const fetchPatients = () => {
-    fetch("http://localhost:4000/v1/patients")
+    fetch("https://morning-sands-55044.herokuapp.com/v1/patients")
       .then((response) => response.json())
       .then((result) => setPatients(result));
   };

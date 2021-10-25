@@ -6,7 +6,8 @@ function DoctorListItem({ id, name, onDeleteDoctor }) {
   const [details, setDetails] = useState(null);
 
   function handleLoadDetails() {
-    fetch(`http://localhost:5000/v1/doctor/${id}`)
+    //fetch(`http://localhost:5000/v1/doctor/${id}`)
+    fetch(`https://stormy-eyrie-59187.herokuapp.com/v1/doctor/${id}`)
       .then((response) => response.json())
       .then((response) => setDetails(response));
   }
